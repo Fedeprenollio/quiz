@@ -20,6 +20,7 @@ const renderPage = (quiz, ui) => {
     });
     ui.showProgres(quiz.questionIndex+1, quiz.question.length)
 
+    ui.showDifficulty(quiz.getQuestionIndex().difficulty)
   }
 };
 

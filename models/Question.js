@@ -7,10 +7,13 @@ export class Question {
      */
 
 
-  constructor(text, choices, answer) {
+  constructor(text, choices, answer,difficulty,points) {
     this.text = text,
     this.choices = choices,
-    this.answer = answer
+    this.answer = answer,
+    this.difficulty = difficulty,
+    this.points = points
+    
 }
 
 /**
@@ -23,6 +26,5 @@ correctAnswer(choice){
 }
 }
 
-const question = new Question("cuanto es 1+1", [1,2,3,4,6],"2 ");
+const question = new Question();
 
-console.log(question.correctAnswer(2));

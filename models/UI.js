@@ -1,6 +1,12 @@
 export class UI {
   constructor() {}
 
+    showDifficulty(texto){
+        const element = document.getElementById("difficulty")
+        element.innerText = `Nivel: ${texto}`
+    }
+
+
   showQuestion(texto) {
     const questionTitle = document.getElementById("question");
     questionTitle.innerText = texto;

@@ -38,9 +38,8 @@ isEnded(){
    */
 
   guess(answer) {
-      console.log(answer)
       if (this.getQuestionIndex().correctAnswer(answer)) {
-      this.score++;
+      this.score = this.score + this.getQuestionIndex().points
     }
 
     this.questionIndex++;
