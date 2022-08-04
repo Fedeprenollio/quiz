@@ -1,9 +1,9 @@
 export class UI {
   constructor() {}
 
-    showDifficulty(texto){
+    showDifficulty(texto, points){
         const element = document.getElementById("difficulty")
-        element.innerText = `Nivel: ${texto}`
+        element.innerText = `Nivel: ${texto}. Puntos: ${points}`
     }
 
 
@@ -25,7 +25,6 @@ export class UI {
       button.addEventListener("click", () => callback(choices[i]));
     }
 
-    console.log(choicesContainer);
   }
 
   /**
@@ -36,7 +35,7 @@ export class UI {
   showScore(score) {
     const quizEndHTML = `
     <h2>Resultado: </h2>
-    <h3>Tu puntaje es ${score}</h3>
+    <h3>Tu puntaje es ${score} sobre 90 posibles</h3>
     `;
     const element = document.getElementById("quiz");
     element.innerHTML = quizEndHTML;
