@@ -21,7 +21,7 @@ const renderPage = (quiz, ui) => {
       setTimeout( ()=>{  renderPage(quiz, ui)} ,1500 )
       
     });
-    ui.showProgres(quiz.questionIndex+1, quiz.question.length)
+    ui.showProgres(quiz.questionIndex+1, quiz.question.length, quiz.score)
 
     ui.showDifficulty(quiz.getQuestionIndex().difficulty, quiz.getQuestionIndex().points)
   }

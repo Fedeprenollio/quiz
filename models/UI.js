@@ -59,7 +59,10 @@ if(score <= 5){
   }else if ( score>5 & score < 60 ){
   status =  `Quizas le ganas a la IA en nivel facil`
 
-}else{
+}else if(score>=60 & score<85){
+    status ="Vas por buen camino a 2k!"
+} else {
+  
   status = "Tienes un pase directo a la Red Bull "
 }
 
@@ -77,8 +80,10 @@ element.innerHTML = quizEndHTML;
  * @param {number} total 
  */
 
-  showProgres(currentIndex, total){
+  showProgres(currentIndex, total,score){
     const element = document.getElementById("progress")
-    element.innerHTML = `Pregunta ${currentIndex} de ${total}`
+    element.innerHTML = `Pregunta ${currentIndex} de ${total}<hr/>
+                          ${score} puntos
+                        `
   }
 }
