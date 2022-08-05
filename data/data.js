@@ -120,7 +120,7 @@ export const data = [
   },
   {
     question: "Con la salida de Dawn of the Dukes la tecnología de Caballería Manipur otorga a la caballería +5 de ataque contra arqueros. ¿Cómo era esta corono en su primera versión?",
-    choices: ["Daba +6 de ataque de los arambay y caballeria vs edificios", "Daba +4 de ataque a la caballeria vs edificios", "Daba +3 a los arambay vs edificios", "Daba +2 de ataque a los elefantes vs <edificios></edificios>"],
+    choices: ["Daba +6 de ataque de los arambay y caballeria vs edificios", "Daba +4 de ataque a la caballeria vs edificios", "Daba +3 a los arambay vs edificios", "Daba +2 de ataque a los elefantes vs edificios"],
     answer: "Daba +6 de ataque de los arambay y caballeria vs edificios",
     points: 5,
     difficulty: "2K"

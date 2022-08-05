@@ -10,18 +10,22 @@ import { UI } from "./models/UI.js";
 
 const renderPage = (quiz, ui) => {
   if (quiz.isEnded()) {
-    console.log(quiz.score );
    ui.showScore(quiz.score)
   } else {
     ui.showQuestion(quiz.getQuestionIndex().text);
+
     ui.showChoices(quiz.getQuestionIndex().choices, (currentChoice) => {
       quiz.guess(currentChoice);
-      renderPage(quiz, ui);
+
+    setTimeout(()=>ui.showChoiceCorrect(quiz.getQuestionIndex2().answer),500)
+      setTimeout( ()=>{  renderPage(quiz, ui)} ,1500 )
+      
     });
     ui.showProgres(quiz.questionIndex+1, quiz.question.length)
 
     ui.showDifficulty(quiz.getQuestionIndex().difficulty, quiz.getQuestionIndex().points)
   }
+
 };
 
 const main = () => {
