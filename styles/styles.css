@@ -12,13 +12,20 @@ body{
 }
 
 #quiz{
+    min-width: 400px;
     background: whitesmoke;
     width: 30em;
+    
     padding: 4em;
     text-align: center;
+    overflow: scroll;
+
+    
+   
 }
 
 h1{
+    width: auto;
     color: #57636e;
     font-size: 3em;
     text-align: center;
@@ -26,6 +33,8 @@ h1{
 }
 
 h3{
+    width: auto;
+
     color: #57636e;
     font-size: 2em;
     text-align: center;
@@ -33,6 +42,8 @@ h3{
 }
 
 #question{
+    width: auto;
+
     font-size: 2em;
     color: #57636e;
 
